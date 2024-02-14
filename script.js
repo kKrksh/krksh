@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   let count = 0;
   const maxCount = 6;
-  const contentElement = document.getElementById("useless");
+  const useless = document.getElementById("useless");
   
   const paragraphs = [
     "Go away.",
@@ -14,15 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
   function changeContent() {
     if (count > 4){
       window.close()
+      useless.textContent = "Oh it doesn't work on your browser / device :("
     }
     if (count >= maxCount) {
         clearInterval(intervalId);
     }
-    contentElement.textContent = paragraphs[count];
+    useless.textContent = paragraphs[count];
     count++;
 }
   
   const intervalId = setInterval(changeContent, 10000); 
   changeContent();
 });
+
+
 
