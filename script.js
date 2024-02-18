@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
   function changeContent() {
     if (count > 4){
-      window.close()
-      useless.textContent = "Oh it doesn't work on your browser / device :("
+      document.getElementById("notarickroll").src = "just_a_normal_video.mp4"
+      document.getElementById("notarickroll").style.display = "block";
     }
     if (count >= maxCount) {
         clearInterval(intervalId);
@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const intervalId = setInterval(changeContent, 10000); 
   changeContent();
 });
+
+
 
 
 
