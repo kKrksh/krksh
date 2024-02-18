@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   let count = 0;
-  const maxCount = 6;
+  const maxCount = 5;
   const useless = document.getElementById("useless");
   
   const paragraphs = [
