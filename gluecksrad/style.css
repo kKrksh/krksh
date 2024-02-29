@@ -1,0 +1,13 @@
+#name {
+  font-family: roboto;
+  display: block;
+}
+#name:hover {
+  cursor: default;
+}
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
