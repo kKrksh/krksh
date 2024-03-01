@@ -13,8 +13,6 @@ function spin() {
       previousIndex = newIndex;
       document.getElementById("name").textContent = Namen[newIndex];
       counter++;
-    } else {
-      clearInterval(intervalId);
-    }
+    } 
   }, 100);
 }
