@@ -1,4 +1,4 @@
-const Namen = ["Ali", "Linus", "Karam", "Thomas"];
+oconst Namen = ["Ali", "Linus", "Karam", "Thomas"];
 
 function spin() {
   let counter = 0;
@@ -15,7 +15,6 @@ function spin() {
       counter++;
     } else {
       clearInterval(intervalId);
-      document.getElementById("name").textContent = "Ali";
     }
   }, 100);
 }
