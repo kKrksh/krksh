@@ -1,0 +1,83 @@
+#trade {
+  font-family: roboto;
+  color: black;
+  text-decoration: none;
+}
+#company {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#logo {
+  height: 120px;
+  margin-top: 15px;
+}
+#aa{
+  text-decoration: none;
+}
+
+#information {
+  display: block;
+  margin-top: 100px;
+}
+#center {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+}
+.in:focus, .in:hover{
+  border-width: 1px;
+  border-color: #002f86 !important;
+  outline: none;
+}
+.in {
+  display: block;
+  margin-top: 20px;
+  font-family: roboto;
+  width:178px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(254,196,58,255);
+  height: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  padding-left: 6px;
+}
+#country, #color{
+  width: 185px;
+  height: 23px;
+  border-style: solid;
+  padding-left: 2px;
+}
+#paypal, #card{
+  width:192px;
+  height : 40px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgba(254,196,58,255);
+  color: rgba(0,47,134,255);
+  font-size: 25px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0,0,0, 0.6);
+  cursor: pointer;
+}
+#card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pal{
+  color: rgba(0,156,222,255);
+}
+#ci{
+  height: 30px;
+}
+#filler{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#country option:nth-of-type(1){
+  color: gray;
+}
