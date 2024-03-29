@@ -90,3 +90,13 @@
   color: blue;
   border-color: blue;
 }
+#github{
+  height: 30px;
+  opacity: 0.7;
+}
+#code{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-content: center;
+}
