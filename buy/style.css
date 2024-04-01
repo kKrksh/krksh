@@ -108,6 +108,10 @@
   margin-top: 20px;
   align-content: center;
 }
-button {
-  -webkit-tap-highlight-color: transparent;
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
 }
