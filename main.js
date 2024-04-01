@@ -24,3 +24,9 @@ function colorSelection(col) {
   current = 1;
   displayer.src = `media/image${current}${color}.jpg`;
 }
+function isMobileDevice() {
+  return /iPhone|iPad|iPod|Android|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+if (isMobileDevice()) {
+  document.getElementById("display").style = "height: 100%";
+}
