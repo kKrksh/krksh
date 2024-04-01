@@ -126,3 +126,6 @@
   margin-top: 20px;
   align-content: center;
 }
+button {
+  -webkit-tap-highlight-color: transparent;
+}
