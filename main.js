@@ -48,6 +48,6 @@ if ("maxTouchPoints" in navigator) {
 }
 
 if (hasTouchScreen){
-    document.getElementById("display").style = "height : 400px !important"
+    document.getElementById("display").style = "height : 400px !important;"
 }
 
