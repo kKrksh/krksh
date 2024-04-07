@@ -49,7 +49,7 @@ if ("maxTouchPoints" in navigator) {
 
 if (hasTouchScreen) {
     document.getElementById("display").style.height = "200px";
-    document.getElementById("display).style.width = "200px";
+    document.getElementById("display").style.width = "200px";
 }
 
 
