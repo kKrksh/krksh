@@ -24,7 +24,8 @@ function colorSelection(col) {
   current = 1;
   displayer.src = `media/image${current}${color}.jpg`;
 }
-var hasTouchScreen = false;
+
+let hasTouchScreen = false;
 
 if ("maxTouchPoints" in navigator) {
     hasTouchScreen = navigator.maxTouchPoints > 0;
@@ -47,13 +48,6 @@ if ("maxTouchPoints" in navigator) {
 }
 
 if (hasTouchScreen){
-    document.getElementById("body").textContent = "This site is unavailable for mobile devices, please switch to a desktop device to access";
-}
-else{
-  console.log("working?")
+    document.getElementById("display").style = "height 400px; !important"
 }
 
-const isMobile = navigator.userAgentData.mobile;
-if (isMobile) {
-    document.getElementById('display').style = 'height : 100%;'
-}
