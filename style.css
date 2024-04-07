@@ -122,14 +122,19 @@
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:black;
 }
-  justify-content: center;
-  margin-top: 20px;
-  align-content: center;
-}
 input,
 textarea,
 button,
 select,
 a {
     -webkit-tap-highlight-color: transparent;
+    cursor: default !important;
 }
+input:hover,
+textarea:hover,
+button:hover,
+select:hover,
+a:hover{
+  cursor: pointer !important;
+}
+
