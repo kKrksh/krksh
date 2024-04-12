@@ -1,73 +1,73 @@
-function no_payment(){
-  alert("Payment is not currently available")
-}
-let languageCheck = "en";
-function checkShipping(){
-  let country = document.getElementById("country").value
-  if (country === "Germany"){
-    if (languageCheck === "de"){
-      language("de","0,99")
-    }
-    else if (languageCheck === "en"){
-      language("en","0,99")
-    }
-  }
-  else{
-    if (languageCheck === "de"){
-      language("de","1,99")
-    }
-    else if (languageCheck === "en"){
-      language("en","1,99")
-    }
-  }
-}
-function language(lang, price){
-  languageCheck = lang
-  if (lang === "en"){
-    document.getElementById("english").style.backgroundColor = "rgb(225, 171, 47)";
-    document.getElementById("german").style.backgroundColor = "rgb(254,196,58)"
-    document.getElementById("first").placeholder = "First name";
-    document.getElementById("last").placeholder = "Last name";
-    document.getElementById("age").placeholder = "Date of Birth DD/MM/YYYY"
-    document.getElementById("ZIP").placeholder = "ZIP code"
-    document.getElementById("adress").placeholder = "Street + House number"
-    document.getElementById("white").textContent = "White"
-    document.getElementById("black").textContent = "Black"
-    document.getElementById("red").textContent = "Red"
-    document.getElementById("blue").textContent = "Blue"
-    document.getElementById("selectC").textContent = "Please select"
-    document.getElementById("texte").textContent = "or"
-    document.getElementById("price").textContent = "Price: 2,99€"
-    if (price === undefined) {
-      checkShipping()
-    }
-    else{
-      document.getElementById("shipping").textContent = `${price}€ shipping`
-    }
-  }
-  else if (lang === "de"){
-    langua = lang
-    document.getElementById("english").style.backgroundColor = "rgb(254,196,58)";
-    document.getElementById("german").style.backgroundColor = "rgb(225, 171, 47)"
-    document.getElementById("first").placeholder = "Vorname";
-    document.getElementById("last").placeholder = "Nachname";
-    document.getElementById("age").placeholder = "Geburtsdatum DD/MM/YYYY"
-    document.getElementById("ZIP").placeholder = "Postleitzahl"
-    document.getElementById("adress").placeholder = "Straße + Hausnummer"
-    document.getElementById("white").textContent = "Weiß"
-    document.getElementById("black").textContent = "Schwarz"
-    document.getElementById("red").textContent = "Rot"
-    document.getElementById("blue").textContent = "Blau"
-    document.getElementById("selectC").textContent = "Bitte auswählen"
-    document.getElementById("texte").textContent = "oder";
-    document.getElementById("price").textContent = "Preis: 2,99€"
-    if (price === undefined) {
-      checkShipping()
-    }
-    else{
-      document.getElementById("shipping").textContent = `${price}€ Versand`
-    }
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="none;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/media/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Buy Cable Organizer</title>
+  </head>
+  <body>
+    <a href="/" id="aa"> 
+    <div id="company">
+      <img src="/media/logo.png" alt="" id="logo" />
+      <h1 id="trade">&trade;</h1>
+    </div>
+    </a>
+    <div id="lang">
+      <button id="english" onclick="language('en')">ENG</button>
+      <button id="german" onclick="language('de')">DEU</button>
+    </div>
+    <div id="center">
+      <div id="information">
+        <input type="text" placeholder="First name" class="in" id="first" />
+        <input type="text" placeholder="Last name" class="in" id="last"/>
+        <input type="text" id="age" class="in" placeholder="Date of Birth DD/MM/YYYY">
+        <select id="country" class="in" onchange="checkShipping()">
+          <option value="None" id="selectC">Please select</option>
+          <option value="Austria">Österreich</option>
+          <option value="Belgium">Belgique</option>
+          <option value="Germany">Deutschland</option>
+          <option value="Netherlands">Nederland</option>
+          <option value="Switzerland">Schweiz</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="None">None of the above</option>
+      </select>
+        <input type="text" id="ZIP" placeholder="ZIP code" class="in">
+        <input type="text" id="adress" placeholder="Street + House number" class="in">
+        <select name="" id="color" class="in">
+          <option value="white" id="white">White</option>
+          <option value="black" id="black">Black</option>
+          <option value="red" id="red">Red</option>
+          <option value="blue" id="blue">Blue</option>
+        </select>
+        <div id="payment">
+          <div style="display: flex; justify-content: center;">
+            <div>
+              <p id="price" style="font-family: roboto; font-size: 20px; cursor: default;">Price: 2,99€ +</p> 
+             <p style="font-family: roboto; font-size: 20px; cursor: default;" id="shipping">1,99€ shipping</p>
+            </div>
+          </div>
+          <button id="paypal" style="margin-top: 20px;" onclick="no_payment()"> 
+          Pay<span id="pal">Pal</span>
+          </button>
+          <div id="filler"><p style="font-family: roboto; font-size: 20px; cursor: default;" id="texte" >or</p></div>
+          <button id="card" onclick="no_payment()"><img src="/media/credit-card-solid.svg" id="ci"></button>
+        </div>
+        <div id="code">
+          <a href="https://github.com/kKrksh/krksh.site" target="_blank" ><img src="/media/github.svg" alt="" id="github"></a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
 
 
