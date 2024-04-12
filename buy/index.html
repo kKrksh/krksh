@@ -29,8 +29,8 @@
         <input type="text" placeholder="First name" class="in" id="first" />
         <input type="text" placeholder="Last name" class="in" id="last"/>
         <input type="text" id="age" class="in" placeholder="Date of Birth DD/MM/YYYY">
-        <select id="country" class="in" >
-          <option value="None" id="select">Please select</option>
+        <select id="country" class="in" onchange="checkShipping()">
+          <option value="None" id="selectC">Please select</option>
           <option value="Austria">Österreich</option>
           <option value="Belgium">Belgique</option>
           <option value="Germany">Deutschland</option>
@@ -38,7 +38,7 @@
           <option value="Switzerland">Schweiz</option>
           <option value="United Kingdom">United Kingdom</option>
           <option value="None">None of the above</option>
-        </select>
+      </select>
         <input type="text" id="ZIP" placeholder="ZIP code" class="in">
         <input type="text" id="adress" placeholder="Street + House number" class="in">
         <select name="" id="color" class="in">
