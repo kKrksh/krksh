@@ -23,21 +23,31 @@ function colorSelection(col) {
   color = col
   current = 1;
   displayer.src = `media/image${current}${color}.jpg`;
+  for (let i = 1; i < 5; i++) {
+    document.getElementById(`c${i}`).style = "color:black;";
+  }
+  document.getElementById(`c${current}`).style = "color:white;";
 }
+
+//Stackoverflow code, essential for mobile usage:
 
 let hasTouchScreen = false;
 
 if ("maxTouchPoints" in navigator) {
     hasTouchScreen = navigator.maxTouchPoints > 0;
-} else if ("msMaxTouchPoints" in navigator) {
+} 
+else if ("msMaxTouchPoints" in navigator) {
     hasTouchScreen = navigator.msMaxTouchPoints > 0;
-} else {
+} 
+else {
     var mQ = window.matchMedia && matchMedia("(pointer:coarse)");
     if (mQ && mQ.media === "(pointer:coarse)") {
         hasTouchScreen = !!mQ.matches;
-    } else if ('orientation' in window) {
+    } 
+    else if ('orientation' in window) {
         hasTouchScreen = true; // deprecated, but good fallback
-    } else {
+    } 
+    else {
         // Only as a last resort, fall back to user agent sniffing
         var UA = navigator.userAgent;
         hasTouchScreen = (
@@ -47,9 +57,9 @@ if ("maxTouchPoints" in navigator) {
     }
 }
 
-if (hasTouchScreen) {
-    document.getElementById("display").style.height = "200px !important";
-    document.getElementById("display").style.width = "200px !important";
+if (hasTouchScreen){
+    document.getElementById("display").style = "height 400px; !important"
+    dicument.getElementById("display").style = "width 400px; !important"
 }
 
 
