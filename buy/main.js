@@ -1,7 +1,28 @@
 function no_payment(){
   alert("Payment is not currently available")
 }
-function language(lang){
+let languageCheck = "en";
+function checkShipping(){
+  let country = document.getElementById("country").value
+  if (country === "Germany"){
+    if (languageCheck === "de"){
+      language("de","0,99")
+    }
+    else if (languageCheck === "en"){
+      language("en","0,99")
+    }
+  }
+  else{
+    if (languageCheck === "de"){
+      language("de","1,99")
+    }
+    else if (languageCheck === "en"){
+      language("en","1,99")
+    }
+  }
+}
+function language(lang, price){
+  languageCheck = lang
   if (lang === "en"){
     document.getElementById("english").style.backgroundColor = "rgb(225, 171, 47)";
     document.getElementById("german").style.backgroundColor = "rgb(254,196,58)"
@@ -14,12 +35,18 @@ function language(lang){
     document.getElementById("black").textContent = "Black"
     document.getElementById("red").textContent = "Red"
     document.getElementById("blue").textContent = "Blue"
-    document.getElementById("select").textContent = "Please select"
+    document.getElementById("selectC").textContent = "Please select"
     document.getElementById("texte").textContent = "or"
-    document.getElementById("price").textContent = "Price: 2,99€ +"
-    document.getElementById("shipping").textContent = "1,99€ shipping"
+    document.getElementById("price").textContent = "Price: 2,99€"
+    if (price === undefined) {
+      checkShipping()
+    }
+    else{
+      document.getElementById("shipping").textContent = `${price}€ shipping`
+    }
   }
   else if (lang === "de"){
+    langua = lang
     document.getElementById("english").style.backgroundColor = "rgb(254,196,58)";
     document.getElementById("german").style.backgroundColor = "rgb(225, 171, 47)"
     document.getElementById("first").placeholder = "Vorname";
@@ -31,9 +58,14 @@ function language(lang){
     document.getElementById("black").textContent = "Schwarz"
     document.getElementById("red").textContent = "Rot"
     document.getElementById("blue").textContent = "Blau"
-    document.getElementById("select").textContent = "Bitte auswählen"
+    document.getElementById("selectC").textContent = "Bitte auswählen"
     document.getElementById("texte").textContent = "oder";
-    document.getElementById("price").textContent = "Preis: 2,99€ +"
-    document.getElementById("shipping").textContent = "1,99€ Lieferung"
+    document.getElementById("price").textContent = "Preis: 2,99€"
+    if (price === undefined) {
+      checkShipping()
+    }
+    else{
+      document.getElementById("shipping").textContent = `${price}€ Versand`
+    }
   }
 }
