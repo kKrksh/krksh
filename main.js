@@ -60,7 +60,7 @@ else {
 
 if (hasTouchScreen){
     document.getElementById("display").style = "height 400px; !important"
-    dicument.getElementById("display").style = "width 400px; !important"
+    document.getElementById("display").style = "width 400px; !important"
 }
 
 function redirectColor(){
