@@ -27,6 +27,7 @@ function colorSelection(col) {
     document.getElementById(`c${i}`).style = "color:black;";
   }
   document.getElementById(`c${current}`).style = "color:white;";
+  redirectColor();
 }
 
 //Stackoverflow code, essential for mobile usage:
@@ -62,4 +63,7 @@ if (hasTouchScreen){
     dicument.getElementById("display").style = "width 400px; !important"
 }
 
-
+function redirectColor(){
+  document.getElementById("buyBtn").href = `/buy/?color=${color}`;
+}
+redirectColor();
