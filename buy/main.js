@@ -1,3 +1,4 @@
+
 function no_payment(){
   alert("Payment is not currently available")
 }
@@ -69,3 +70,6 @@ function language(lang, price){
     }
   }
 }
+
+let color = new URLSearchParams(window.location.search).get('color');
+document.getElementById("color").value = color
