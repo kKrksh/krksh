@@ -1,5 +1,12 @@
-
+function noTerms(){
+  alert("There are no terms since this is a not a real company")
+}
 function no_payment(){
+  if (!document.getElementById("privacy").checked || !document.getElementById("termsService").checked){
+    document.getElementById("agree").style.color = "red";
+    return
+  }
+  document.getElementById("agree").style.color = "white";
   alert("Payment is not currently available")
 }
 let languageCheck = "en";
@@ -72,4 +79,8 @@ function language(lang, price){
 }
 
 let color = new URLSearchParams(window.location.search).get('color');
+const searchParams = new URLSearchParams(window.location.search);
+if (!searchParams.has('color')){
+  color = "white"
+}
 document.getElementById("color").value = color
