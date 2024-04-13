@@ -28,6 +28,8 @@
       <div id="information">
         <input type="text" placeholder="First name" class="in" id="first" />
         <input type="text" placeholder="Last name" class="in" id="last"/>
+        <input type="email" placeholder="Email" class="in" id="email">
+        <input type="tel" placeholder="Phone number (Optional)" id="phone" class="in">
         <input type="text" id="age" class="in" placeholder="Date of Birth DD/MM/YYYY">
         <select id="country" class="in" onchange="checkShipping()">
           <option value="None" id="selectC">Please select</option>
@@ -47,11 +49,24 @@
           <option value="red" id="red">Red</option>
           <option value="blue" id="blue">Blue</option>
         </select>
+        <div id="terms">
+          <div>
+            <div>
+              <p class="termsStyle termsBtn" style="display : block" onclick="noTerms()" >Terms of service</p>
+              <p class="termsStyle termsBtn" style="display : block" onclick="noTerms()">Privacy policy</p>
+              <input type="checkbox" name="termsOfService" class="termsStyle" id="termsService">
+              <label for="termsOfService" class="termsStyle">I have read <br> and agree to the Terms of service</label>
+              <br>
+              <input type="checkbox" name="Privacy policy" id="privacy" class="termsStyle">
+              <label for="privacy" class="termsStyle">I have read <br> and agree to the Privacy policy</label>
+            </div>
+          </div>
+        </div>
         <div id="payment">
           <div style="display: flex; justify-content: center;">
             <div>
               <p id="price" style="font-family: roboto; font-size: 20px; cursor: default;">Price: 2,99€ +</p> 
-             <p style="font-family: roboto; font-size: 20px; cursor: default;" id="shipping">1,99€ shipping</p>
+              <p style="font-family: roboto; font-size: 20px; cursor: default;" id="shipping">1,99€ shipping</p>
             </div>
           </div>
           <button id="paypal" style="margin-top: 20px;" onclick="no_payment()"> 
@@ -59,6 +74,9 @@
           </button>
           <div id="filler"><p style="font-family: roboto; font-size: 20px; cursor: default;" id="texte" >or</p></div>
           <button id="card" onclick="no_payment()"><img src="/media/credit-card-solid.svg" id="ci"></button>
+          <div style="display: flex; justify-content: center; font-family: roboto; color: white;">
+            <p id="agree" style="font-size: 10px;">Please agree to the terms of service and privacy policy first</p>
+          </div>
         </div>
         <div id="code">
           <a href="https://github.com/kKrksh/krksh.site" target="_blank" ><img src="/media/github.svg" alt="" id="github"></a>
@@ -68,3 +86,4 @@
     <script src="main.js"></script>
   </body>
 </html>
+
