@@ -103,9 +103,16 @@ else {
 
 if (hasTouchScreen){
   alert("Touch screen");
-  document.getElementById("display").style.height = "250px";
-  document.getElementById("display").style.width = "250px";
+  const displayElement = document.getElementById("display");
+  const newWidth = 250;
+  const originalWidth = displayElement.offsetWidth;
+  const originalHeight = displayElement.offsetHeight;
+  const newHeight = (originalHeight / originalWidth) * newWidth;
+
+  displayElement.style.width = newWidth + "px";
+  displayElement.style.height = newHeight + "px";
 }
+
 
 function redirectColor(){
   document.getElementById("buyBtn").href = `/buy/?color=${color}`;
