@@ -102,7 +102,6 @@ else {
 }
 
 if (hasTouchScreen){
-  alert("Touch screen");
   const displayElement = document.getElementById("display");
   const newWidth = 250;
   const originalWidth = displayElement.offsetWidth;
