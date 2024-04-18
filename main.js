@@ -102,9 +102,9 @@ else {
 }
 
 if (hasTouchScreen){
-  alert("Touch screen")
-  document.getElementById("display").style = "height 400px; !important";
-  document.getElementById("display").style = "width 400px; !important";
+  alert("Touch screen");
+  document.getElementById("display").style.height = "400px";
+  document.getElementById("display").style.width = "400px";
 }
 
 function redirectColor(){
