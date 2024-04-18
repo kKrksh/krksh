@@ -1,0 +1,143 @@
+#name {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  margin-top: 4px;
+}
+#top {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+}
+#n {
+  margin-top: 0px;
+  font-family: roboto;
+  font-size: 15px;
+}
+#credits {
+  display: flex;
+  justify-content: center;
+}
+#dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+#display {
+  width: 30%;
+}
+.scroll {
+  background: none;
+  border: none;
+  font-size: 50px;
+  margin: 30px;
+  color: rgb(105, 98, 98);
+  height: 60px;
+  width: 60px;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;       
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+.scroll:hover {
+  background-color: rgb(217, 209, 209);
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#downloadBtn, #buyBtn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  color: rgb(248, 236, 236);
+  background-color: orange;
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+#buyBtn{
+  margin-left: 20px;
+}
+#colors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#black, #white, #red, #blue{
+  width: 80px;
+  height: 40px;
+  font-size: 25px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  background: none;
+
+}
+#white{
+  background-color: rgb(181, 177, 177);
+  color: white !important;
+}
+#red{
+  color: red;
+  border-color: red;
+}
+#blue{
+  color: blue;
+  border-color: blue;
+}
+#github{
+  height: 30px;
+  opacity: 0.7;
+}
+#code{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-content: center;
+}
+#picProg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 60px
+}
+#current{
+  font-size: 50px;
+}
+#c1{
+  color: white;
+}
+#c1,#c2,#c3,#c4{
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+}
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+    cursor: default !important;
+}
+input:hover,
+textarea:hover,
+button:hover,
+select:hover,
+a:hover{
+  cursor: pointer !important;
+}
