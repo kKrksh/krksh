@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <a id="download-link" href="/media/Umfrage.xlsx" download>Download Image</a>
+  <script>
+    function startDownloadAndClose() {
+    var downloadLink = document.getElementById('download-link');
+    downloadLink.click();
+    setTimeout(function() {
+        window.close();
+    }, 1000);
+}
+window.onload = startDownloadAndClose;
+  </script>
+</body>
+</html>
