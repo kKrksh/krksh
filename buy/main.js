@@ -45,7 +45,7 @@ function language(lang, price){
     document.getElementById("blue").textContent = "Blue"
     document.getElementById("selectC").textContent = "Please select"
     document.getElementById("texte").textContent = "or"
-    document.getElementById("price").textContent = "Price: 2,99€"
+    document.getElementById("price").textContent = "Price: 0,99€"
     if (price === undefined) {
       checkShipping()
     }
@@ -68,7 +68,7 @@ function language(lang, price){
     document.getElementById("blue").textContent = "Blau"
     document.getElementById("selectC").textContent = "Bitte auswählen"
     document.getElementById("texte").textContent = "oder";
-    document.getElementById("price").textContent = "Preis: 2,99€"
+    document.getElementById("price").textContent = "Preis: 0,99€"
     if (price === undefined) {
       checkShipping()
     }
