@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="calculator-solid.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+   <div id="mainDiv">
+    <div>
+        <p id="display">0</p>
+    </div>
+    <div class="container">
+        <button id="clear" class="mainButtons extra" onclick="main('clear')">C</button>
+        <button id="pareOpen" class="mainButtons extra" >(</button>
+        <button id="pareClose" class="mainButtons extra">)</button>
+        <button id="divide" class="mainButtons extra" onclick="main('/')">&divide;</button>
+        <button id="seven" class="mainButtons" onclick="main('7')">7</button>
+        <button id="eight" class="mainButtons" onclick="main('8')">8</button>
+        <button id="nine" class="mainButtons" onclick="main('9')">9</button>
+        <button id="multiply" class="mainButtons extra" onclick="main('*')">x</button>
+        <button id="four" class="mainButtons" onclick="main('4')">4</button>
+        <button id="five" class="mainButtons" onclick="main('5')">5</button>
+        <button id="six" class="mainButtons" onclick="main('6')">6</button>
+        <button id="subtract" class="mainButtons extra" onclick="main('-')">-</button>
+        <button id="one" class="mainButtons" onclick="main('1')">1</button>
+        <button id="two" class="mainButtons" onclick="main('2')">2</button>
+        <button id="three" class="mainButtons" onclick="main('3')">3</button>
+        <button id="add" class="mainButtons extra" onclick="main('+')">+</button>
+        <button id="delete" class="mainButtons extra" onclick="main('delete')">&larr;</button>
+        <button id="zero" class="mainButtons" onclick="main('0')">0</button>
+        <button id="point" class="mainButtons extra" onclick="main('.')">.</button>
+        <button id="equal" class="mainButtons extra" onclick="main('=')">=</button>
+    </div>
+   </div>
+   <script src="main.js"></script>
+</html>
