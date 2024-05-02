@@ -57,7 +57,7 @@ function main(input){
       break;
     case "delete":
       expression = expression.slice(0, -1)
-      display.expression = displayExpression.slice(0, -1)
+      displayExpression = displayExpression.slice(0, -1)
       if (expression.length === 0){
         display.textContent = 0;
       }
