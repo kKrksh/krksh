@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="media/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cabel Organizer</title>
+  </head>
+  <body id="body">
+    <div id="top">
+      <h1 id="name">Cable Organizer</h1>
+    </div>
+    <div id="credits">
+      <p id="n">KRKSH&trade;</p>
+    </div>
+    <div id="dis">
+      <button id="right" class="scroll" onclick="scrollBackwards()"><</button>
+      <img src="media/image1white.jpeg" alt="" id="display" />
+      <button id="left" class="scroll" onclick="scrollForward()">></button>
+    </div>
+    <div id="center">
+      <div id="mainC">
+        <p id="current"><span id="c1" class="point">&centerdot;</span> 
+        <span id="c2" class="point">&centerdot;</span>
+        <span id="c3" class="point">&centerdot;</span>
+      </p>
+      </div>
+    </div>
+    <div id="colors">
+      <button id="black" onclick="colorSelection('black')">Black</button>
+      <button id="white" onclick="colorSelection('white')">White</button>
+      <button id="red" onclick="colorSelection('red')">Red</button>
+      <button id="blue" onclick="colorSelection('blue')">Blue</button>
+    </div>
+    <div id="buttons">
+      <a href="./media/test.stl" download="test.stl" id="downloadBtn"
+        >Download STL File</a
+      >
+      <a href="buy" id="buyBtn">Buy</a>
+    </div>
+    <div id="code">
+      <a href="https://github.com/kKrksh/krksh.site" target="_blank"
+        ><img src="/media/github.svg" alt="" id="github"
+      /></a>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
