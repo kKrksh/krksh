@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body style="display: flex; justify-content: center; align-items: center;">
+    <div id="childwrapper">
+      <div id="body">
+        <div id="display"></div>
+      </div>
+      <div id="footer">
+        <div class="div"><p id="label1">Message:</p></div>
+        <div class="div"><input type="text" id="message"></div>
+        <div class="div"><button id="send" onclick="send()">send</button></div>
+        <div class="div"><p id="label2">Room ID:</p></div>
+        <div class="div"><input type="text" id="roomId"></div>
+        <div class="div"><button id="join">join</button></div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
