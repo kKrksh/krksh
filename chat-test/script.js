@@ -1,4 +1,4 @@
-import { io } from 'socket.io-client'
+import { io } from '/node_modules/socket.io-client/dist/socket.io.esm.min.js';
 
 //Set up connection to server
 const socket = io("http://localhost:3000");
