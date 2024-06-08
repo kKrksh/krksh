@@ -38,11 +38,19 @@
 
     <script>
       //Set up connection to server
+      let connected = false;
+      
       const socket = io("https://socketio-server-test.glitch.me");
       socket.on("connect", () => {
         send(`you connected with id ${socket.id}`, false, false);
+        connected = true;
       });
 
+      setTimeout( () => {
+        if (!connected){
+          send("Server waking up... (this may take up to 30 seconds)")
+        }
+      },2000)
       //idk what to label this part as
 
       const sendInput = document.getElementById("send");
