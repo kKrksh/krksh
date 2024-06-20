@@ -16,6 +16,15 @@
   <body id="body">
      <p>this site has been removed</p>
      <p>you'll be redirected in <span id="counter">5</span>s</p>
-    <script src="main.js"></script>
+    <script>
+      let counter = 5
+      setInterval(function () {
+        counter--
+        document.getElementById("counter").innerHTML = counter
+        if (counter === 0){
+          window.location = "https://krksh.site/chat"
+        }
+      }, 1000)
+    </script>
   </body>
 </html>
