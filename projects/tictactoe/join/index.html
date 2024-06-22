@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Join Room</title>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <div>
+          <div class="center">
+            <p>Enter Room Id, if it doesn't exist a room will be generated</p>
+          </div>
+          <input type="text" id="1" class="pill" autocomplete="off" />
+          <input type="text" id="2" class="pill" autocomplete="off" />
+          <input type="text" id="3" class="pill" autocomplete="off" />
+          <input type="text" id="4" class="pill" autocomplete="off" />
+        </div>
+        <div style="margin-top: 30px" class="center">
+          <button id="join">Join</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

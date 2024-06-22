@@ -1,0 +1,80 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif, arial, helvetica;
+  overflow: hidden;
+  margin: 0px;
+}
+.cell {
+  border: solid 2px #000000;
+  height: 80px;
+  width: 80px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.cell:hover {
+  background: #00000024;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 260px;
+  height: 260px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#message {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#player {
+  color: red;
+}
+#wrapper {
+  height: 350px;
+  width: 260px;
+}
+#resetDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reset {
+  height: 30px;
+  width: 60px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+#centerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+#roomDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+.spacing {
+  margin-top: 20px;
+}
