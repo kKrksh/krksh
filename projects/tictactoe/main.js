@@ -111,7 +111,7 @@ function checkWin() {
 }
 
 //MULTIPLAYER HANDLING
-const socket = io("http://localhost:3000");
+const socket = io("https://tictactoe-server-krksh.glitch.me/");
 
 //MAIN
 socket.on("send", (id, self) => {
