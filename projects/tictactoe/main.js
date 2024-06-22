@@ -129,7 +129,7 @@ let Terminate = false;
 const params = new URLSearchParams(window.location.search);
 const room = params.get("room");
 if (room === null) {
-  window.location = "https://krksh.site/tictactoe/join";
+  window.location = "https://krksh.site/projects/tictactoe/join";
 } else {
   join();
 }
@@ -138,7 +138,7 @@ function join() {
 }
 socket.on("terminate", () => {
   Terminate = true;
-  window.location = "https://krksh.site/tictactoe/join";
+  window.location = "https://krksh.site/projects/tictactoe/join";
 });
 
 function leave() {
