@@ -112,7 +112,9 @@ function checkWin() {
 
 //MULTIPLAYER HANDLING
 const socket = io("https://tictactoe-server-krksh.glitch.me/");
-
+socket.on("connection", () => {
+  console.log(socket.id)
+})
 //MAIN
 socket.on("send", (id, self) => {
   console.log("receieved");
