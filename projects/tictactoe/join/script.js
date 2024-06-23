@@ -43,7 +43,7 @@ function join() {
   });
   console.log(room);
   if (room.length === 4) {
-    window.location = `http://krksh.site/projects/tictactoe?room=${room}`;
+    window.location = `https://krksh.site/projects/tictactoe?room=${room}`;
   } else {
     alert("Please enter a valid room number");
   }
