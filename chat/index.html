@@ -113,13 +113,11 @@
           roomInput.focus();
         }
       });
-      sendInput.addEventListener("click", () => send());
+      sendInput.addEventListener("click", send);
 
       //Message reviever
 
-      socket.on("recieve", (message, self) => {
-        send(message, false, self);
-      });
+      socket.on("recieve", (message, self) => send(message, false, self));
       socket.on("test", test => console.log(test))
     </script>
   </body>
