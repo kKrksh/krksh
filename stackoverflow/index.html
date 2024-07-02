@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d19a78c25e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>krkchat</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!---->
+      <div class="sidebar">
+        <header class="header1">
+          <div class="user"><i class="fa-solid fa-user userInner"></i></div>
+          <div class="logo">
+            <img
+              src="../assets/images/logo.png"
+              alt="krkchat"
+              class="logoImg"
+            />
+          </div>
+          <div class="settings">
+            <i class="fa-solid fa-gear settingsInner"></i>
+          </div>
+        </header>
+        <div class="body1 bodyGen">
+          <div class="group">
+            <div style="height: 100%; width: 60px">
+              <div class="userImage center">
+                <img
+                  src="https://placeholder.co/50"
+                  alt="userImage"
+                  class="userImageInner"
+                />
+              </div>
+            </div>
+            <div style="height: 50%; width: 50px">test</div>
+          </div>
+        </div>
+        <footer class="footer1 center">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass searchBtn"></i>
+            <input type="text" placeholder="User Id" class="searchInput" />
+          </div>
+        </footer>
+      </div>
+      <!---->
+      <div class="chatWindow">
+        <header class="header2"></header>
+        <div class="body2"></div>
+        <footer class="footer2"></footer>
+      </div>
+      <!---->
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
