@@ -1,0 +1,154 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+  width: 100%;
+  color: rgb(234, 231, 231);
+  overflow: hidden;
+  background: rgb(28, 28, 35);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 410px 1000px;
+}
+
+.sidebar,
+.chatWindow {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 400px;
+  height: 98%;
+}
+
+.userInner,
+.settingsInner {
+  font-size: 30px;
+  color: rgb(234, 231, 231) !important;
+}
+.user,
+.settings {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.header1,
+.body1,
+.footer1,
+.header2,
+.body2,
+.footer2 {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+.header1,
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 60, 60);
+  border-bottom: none;
+}
+.footer1,
+.footer2 {
+  background-color: rgb(63, 60, 60);
+  border-top: none;
+}
+.logoImg {
+  width: 60px;
+  height: 60px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  outline: none;
+}
+
+.searchBtn:hover {
+  cursor: pointer;
+}
+.searchBtn {
+  font-size: 15px !important;
+}
+.searchInput {
+  width: 300px;
+  height: 25px;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  background: rgb(34, 34, 38);
+  color: white;
+}
+.searchInput::placeholder {
+  color: rgba(162, 158, 158, 0.818);
+}
+.search {
+  border: 2px solid #000000;
+  padding-left: 10px;
+  border-radius: 15px;
+  background: rgb(34, 34, 38);
+  color: white;
+}
+.group {
+  display: grid;
+  grid-template-columns: 60px 340px;
+  width: 99.7%;
+  height: 100px;
+  background: rgb(34, 34, 38);
+  font-family: sans-serif;
+  border-bottom: 1px solid #000000;
+}
+.body1,
+.body2 {
+  padding: 0px !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.userImage {
+  width: 60px;
+  height: 100%;
+}
+.userImageInner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.centerV {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.groupText {
+  height: 100%;
+  width: 100%;
+}
+.secondary {
+  margin-left: 20px;
+}
+.chatWindow {
+  width: 1100px !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(34, 34, 38);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
