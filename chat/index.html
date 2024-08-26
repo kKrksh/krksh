@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d19a78c25e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>krkchat</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!---->
+      <div class="sidebar" id="sidebar">
+        <header class="header1">
+          <div class="user">
+            <a href="./sign-in/" id="profileHref"
+              ><i class="fa-solid fa-user userInner"></i
+            ></a>
+          </div>
+          <div class="logo">
+            <img
+              src="./assets/images/logo-main-darkmode.png"
+              alt="krkchat"
+              class="logoImg"
+            />
+          </div>
+          <div class="settings">
+            <p class="settingsInner">&vellip;</p>
+          </div>
+        </header>
+        <div class="body1 bodyGen" id="chatList"></div>
+        <footer class="footer1 center">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass searchBtn"></i>
+            <input type="text" placeholder="User Id" class="searchInput" />
+          </div>
+        </footer>
+      </div>
+      <!---->
+      <div class="chatWindow" id="chatWindow">
+        <header class="header2">
+          <div>
+            <div class="center">
+              <img
+                src="https://placeholder.co/50"
+                alt=""
+                class="userImageInner"
+              />
+            </div>
+          </div>
+          <div class="userGrid">
+            <div><div class="center">Group Name / User</div></div>
+            <div><div class="center tiny">Status</div></div>
+          </div>
+          <div>
+            <div class="center">
+              <p class="settingsInner">&vellip;</p>
+            </div>
+          </div>
+        </header>
+        <div class="body2" id="messageWindow">
+          <!--
+          <div class="selfMessageAlign">
+            <div class="messageSelf">
+              <div class="imageMessage">
+                <img
+                  src="https://placeholder.co/400"
+                  alt="IMAGE NOT LOADED, CHECK INTERNET CONNECTION"
+                  class="innerImage"
+                />
+                <span class="tiny messageInfo">
+                  <p class="noMargin timeStamp">12:01</p>
+                  <p class="noMargin readRecipt">read</p>
+                </span>
+              </div>
+            </div>
+          </div> 
+          -->
+        </div>
+        <footer class="footer2">
+          <div>
+            <div class="center attach">
+              <input type="file" class="attachInvis" id="attached" />
+              <i class="fa-solid fa-paperclip attach-text fontawesome-footer">
+              </i>
+            </div>
+          </div>
+          <div>
+            <div class="center inputWrapper1">
+              <input
+                type="text"
+                name=""
+                id="messageInput"
+                class="messageInput"
+                placeholder="Type your message"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="center sendWrapper" id="sendWrapper">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+          </div>
+          <div></div>
+        </footer>
+      </div>
+      <!---->
+    </div>
+
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/testing.js"></script>
+    <script src="./scripts/style.js"></script>
+    <script src="./scripts/load.js"></script>
+    <script src="./scripts/processor.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

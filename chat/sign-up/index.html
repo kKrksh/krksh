@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="/media/fav-icon.png" />
+    <link rel="stylesheet" href="../styles/up.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <a href="/test/"><img src="/test/media/logo.png" alt="" id="logo" /></a>
+      </div>
+      <div id="main">
+        <div id="window">
+          <div id="inputs">
+            <div class="inputDiv"><p id="message">Sign up</p></div>
+            <div class="inputDiv">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="input"
+                placeholder="Username"
+                autocomplete="off"
+                aria-autocomplete="none"
+                autocapitalize="off"
+                autocorrect="false"
+              />
+            </div>
+            <div class="inputDiv">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input"
+                placeholder="Email"
+                autocomplete="off"
+                aria-autocomplete="none"
+                autocapitalize="off"
+                autocorrect="false"
+              />
+            </div>
+            <div class="inputDiv">
+              <input
+                type="password"
+                name="password"
+                id="pass"
+                class="input"
+                placeholder="Password"
+                autocomplete="nuh-uh"
+              />
+            </div>
+            <div class="inputDiv">
+              <input
+                type="password"
+                name="con-password"
+                id="cpass"
+                class="input"
+                placeholder="Confirm password"
+                autocomplete="nuh-uh"
+              />
+            </div>
+            <div class="inputDiv">
+              <button id="sign" class="redirect">Sign up</button>
+            </div>
+            <div class="inputDiv" style="height: 20px !important">
+              <p id="error">Error</p>
+            </div>
+            <div class="inputDiv" id="resetDiv" style="margin-top: 0px">
+              <a href="" id="reset" class="redirect">Privacy policy</a>
+            </div>
+            <div class="inputDiv">
+              <p style="color: #eeeeee">
+                Already have an account?
+                <a href="../sign-in/" id="regsiter" class="redirect">Sign in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/up.js"></script>
+  </body>
+</html>
