@@ -6,6 +6,8 @@ let firstSelf = true;
 let firstNSelf = true;
 let messageId = 1;
 
+let loadedSessionIds = [];
+
 function loadSession(session) {
   let imgSrc =
     session.imgSrc !== "" ? session.imgSrc : "https://placeholder.co/50";
@@ -31,14 +33,20 @@ function loadSession(session) {
             </div>
           </div>
   `;
-  let sessionElement = document.getElementById(session.id);
+  loadedSessionIds.push(session.id);
 
-  sessionElement.addEventListener("click", () => {
-    firstSelf = true;
-    firstNSelf = true;
-    messageWindow.innerHTML = "";
-    requestMessages(session.id);
-    openSession = session.id;
+  loadedSessionIds.forEach((id) => {
+    let sessionElement = document.getElementById(id);
+    console.log(id);
+
+    sessionElement.addEventListener("click", () => {
+      loaded = [];
+      firstSelf = true;
+      firstNSelf = true;
+      messageWindow.innerHTML = "";
+      requestMessages(id);
+      openSession = id;
+    });
   });
 }
 
