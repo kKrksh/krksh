@@ -1,7 +1,7 @@
 from calliopemini import *
 
 number_arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-functions_arr = ["+", "-", "*", "/","(",")"]
+functions_arr = ["+", "-", "*", "/","(",")","."]
 mode_to_select = "num"
 current_index = 0
 mode = "choose"
@@ -47,7 +47,6 @@ def getNewValue():
     current_index = 0
     mode = "choose"
     to_add = ""
-    handle_input()
 
 def process_input():
     global to_calculate
@@ -76,7 +75,6 @@ def reset_all():
     mode = "choose"
     to_add = ""
     to_calculate = ""
-    handle_input()
 
 while True:
     if button_a.is_pressed():
