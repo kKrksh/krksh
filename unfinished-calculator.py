@@ -1,7 +1,7 @@
 from calliopemini import *
 
 number_arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-functions_arr = ["+", "-", "*", "/","(",")","."]
+functions_arr = ["+", "-", "*", "/", "(", ")", "."]
 mode_to_select = "num"
 current_index = 0
 mode = "choose"
@@ -62,7 +62,6 @@ def process_input():
         print(to_calculate)
         getNewValue()
         
-        
 def reset_all():
     global current_index
     global mode
@@ -76,16 +75,24 @@ def reset_all():
     to_add = ""
     to_calculate = ""
 
-while True:
-    if button_a.is_pressed():
-        if button_b.is_pressed():
+def main():
+    while True:
+        try:
+            if button_a.is_pressed():
+                if button_b.is_pressed():
+                    reset_all()
+                handle_input()
+                sleep(500)
+            elif button_b.is_pressed():
+                process_input()
+                sleep(1000)
+            elif accelerometer.was_gesture("shake"):
+                result = eval(to_calculate)
+                display.scroll(result)
+                reset_all()
+        except Exception as e:
+            display.scroll("Fehler")
             reset_all()
-        handle_input()
-        sleep(500)
-    elif button_b.is_pressed():
-        process_input()
-        sleep(1000)
-    elif accelerometer.was_gesture("shake"):
-        display.scroll(eval(to_calculate))
-        reset_all()
-        
+
+if __name__ == "__main__":
+    main()
