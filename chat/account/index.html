@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Settings</title>
+    <link rel="stylesheet" href="../styles/account.css" />
+    <script
+      src="https://kit.fontawesome.com/d19a78c25e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="popupMessage" class="hidden">UID copied to clipboard</div>
+    <div class="resetPasswordPopUpWrapper" id="rpw">
+      <div class="resetPasswordWindow">
+        <div class="escape"><i class="fa-solid fa-arrow-left" id="escape"></i></div>
+        <div class="center genReset"><input type="password" id="previous" class="resetInput" placeholder="Current Password"></div>
+        <div class="center"><input type="text" id="new" class="resetInput" placeholder="New Password"></div>
+        <div class="center error" id="error">Password Incorrect</div>
+        <div class="center"><button id="confirmBtn">Confirm</button></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="sidebar">
+        <header class="header">Manage Settings</header>
+        <div class="options">
+          <div class="option current">
+            <i class="fa-solid fa-user"></i>Account
+          </div>
+          <div class="option"><i class="fa-solid fa-lock"></i>Privacy</div>
+          <div class="option"><i class="fa-solid fa-sliders"></i></i>Preferences</div>
+          <div class="option"><i class="fa-solid fa-bell"></i>Notifications</div>
+          <div class="option help"><i class="fa-solid fa-circle-info"></i>Help</div>
+        </div>
+        <footer class="footer" id="footer">
+          <div class="copyright">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>Log out
+          </div>
+        </footer>
+      </div>
+      <div class="main">
+        <div class="accinfo settings">
+          <div class="mainHeader">
+            <div>
+              <input type="file" class="editBtn" id="pfpfile" />
+              <i class="fa-solid fa-pen-to-square editBtn"></i>
+              <img
+                src="https://placeholder.co/150"
+                alt="PROFILE PICTURE"
+                id="pfp"
+              />
+            </div>
+            <div class="additional">
+              <div class="userName center" title="Username" id="userName">
+                Placeholder
+              </div>
+              <div class="userid center" title="UID" id="UID">Placeholder</div>
+            </div>
+          </div>
+          <div class="displayName">
+            <div class="centerY">
+              <label for="displayName" style="color: #eb8e8e">Display Name</label>
+            </div>
+            <div class="centerY">
+              <input
+                type="text"
+                id="displayName"
+                title="This is the name other users see"
+              />
+            </div>
+          </div>
+          <div class="displayName">
+            <div class="centerY">
+              <label for="displayName" style="color: #eb8e8e">Status</label>
+            </div>
+            <div class="centerY">
+              <input type="text" id="status" title="This describes you" />
+            </div>
+          </div>
+          <div class="regular centerY changePass" id="passBtn">Change Password</div>
+          <div class="center">
+            <button id="saveBtn">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/account.js"></script>
+  </body>
+</html>

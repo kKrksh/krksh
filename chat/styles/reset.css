@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: rgb(28, 28, 35);
+  overflow: hidden;
+  margin: 0px;
+  user-select: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeInput {
+  width: 30px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #777;
+  border: 0px solid #000000;
+  font-size: 30px;
+  outline: none !important;
+  color: white;
+  text-align: center;
+}
+
+#secondStep {
+  display: none;
+}
+
+#email {
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  background-color: #777;
+  outline: none;
+  color: white;
+  padding-left: 7px;
+  height: 20px;
+  text-align: center;
+}
+
+#email:focus {
+  border: 1px solid #b2ecec;
+}
+
+#send {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(242, 98, 98);
+  outline: none;
+  color: white;
+  padding-left: 7px;
+  height: 20px;
+  text-align: center;
+}

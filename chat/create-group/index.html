@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Group</title>
+    <script
+      src="https://kit.fontawesome.com/d19a78c25e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/create.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header center">Group Settings</header>
+      <div class="options">
+        <div class="center">
+          <input type="file" class="editBtn" id="pfpfile" />
+          <i class="fa-solid fa-pen-to-square editBtn"></i>
+          <img
+            src="https://placeholder.co/150"
+            alt="PROFILE PICTURE"
+            id="pfp"
+          />
+        </div>
+        <div class="users">
+          <div class="center" id="userInput">
+            <input type="text" placeholder="Enter UID" id="UID" />
+          </div>
+          <div class="center" id="userList"></div>
+          <div class="center">
+            <button class="addBtn" id="addBtn">Add User</button>
+          </div>
+        </div>
+        <div class="center">
+          <input
+            type="text"
+            class="center"
+            placeholder="Group Name"
+            id="groupName"
+          />
+        </div>
+        <div class="center">
+          <input
+            type="text"
+            class="center"
+            placeholder="Group Description"
+            id="groupDisc"
+          />
+        </div>
+      </div>
+      <footer class="footer center" id="createGroup">
+        Create Group
+        <p id="errorMessage">This UID doesn't exist</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/create.js"></script>
+  </body>
+</html>
