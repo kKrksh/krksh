@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&amp;display=swap&amp;subset=latin-ext");
+
+:root {
+    --bg: #e0e7e9;
+    --fg: #13101b;
+    --sb: #5c5f6e;
+    --hp: #d396ff;
+    --hs: #96b4ff;
+    --hw: #60ff89;
+    --hl: #ffd340;
+
+    /* combined colors */
+    --hl-hp: #f7ab95;
+    --hl-hs: #a7cb5e;
+
+    /* scale script*/
+    --scale-down: .95;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+
+    scale: var(--scale-down);
+}
+
+.main-centerer {
+    font-family: "Montserrat";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#playField {
+    border: solid 3px var(--fg);
+    border-spacing: 0;
+    user-select: none;
+}
+
+#playField > tr > td {
+    border: solid 1px var(--fg);
+    position: relative;
+}
+
+#playField > tr > td {
+    background-color: var(--fg);
+}
+
+#playField > tr > td > tr > td > div {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg);
+    color: var(--fg);
+
+    background-position: 50% 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.none {
+    background-image: url("media/game/ttt_empty.svg");
+}
+
+.x {
+    background-image: url("media/game/ttt_cross.svg");
+}
+
+.o {
+    background-image: url("media/game/ttt_circle.svg");
+}
+
+/* put it up here because following classes have more priority */
+.highlightLastMove {
+    background-color: var(--hl) !important;
+}
+
+.highlight {
+    background-color: var(--hp) !important;
+}
+
+.highlightSecondary {
+    background-color: var(--hs) !important;
+}
+
+.highlightWinning {
+    background-color: var(--hw) !important;
+}
+
+/* combined highlights */
+.highlightLastMove.highlightSecondary {
+    background-color: var(--hl-hs) !important;
+}
+
+.highlightLastMove.highlight {
+    background-color: var(--hl-hp) !important;
+}
+
+h1 {
+    margin-bottom: -20px;
+}
+
+a {
+    color: var(--fg);
+}
+
+#subtext {
+    font-size: 18px;
+    color: var(--sb);
+    margin-bottom: 4;
+}
+.Credits{
+    font-size: 18px;
+    color: var(--sb);
+    margin-bottom: 4;
+}
+
+#tiny {
+    font-size: 14px;
+    color: var(--sb);
+    margin-bottom: 16px;
+}
+
+#resetGame:hover {
+    cursor:pointer;
+}
+
+#display {
+    text-align: center;
+}
+
+#hardModeToggle {
+    cursor: hand;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#hardModeToggle:hover {
+    cursor: not-allowed;
+}
+
+p a {
+    color: inherit;
+    text-decoration: none;
+}

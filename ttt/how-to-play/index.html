@@ -1,0 +1,85 @@
+
+<!-- Mirrored from tictactesseract.online/how-to-play/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jan 2024 19:35:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="../media/favicon.png">
+    <script src="script.js"></script>
+    <title>How to play</title>
+</head>
+<body>
+    <h1>How to Play<br class="mobile-br"> (and why this is 4D)</h1>
+    <p>
+        Tic Tac Tesseract is a play on the famous game Tic Tac Toe. Like the original, it is played with two participants. The two players take turns placing a piece in an empty cell, attempting to get 4 of their pieces in a straight line, while preventing the other player from creating such a line, by blocking those cells. 
+        <br><br>
+        First of all, instead of playing on a 3x3.. board, we play on a 4x4.. board because it would otherwise be too easy to force a win. Unlike normal Tic Tac Toe, this version of the game is played in of 4 dimensions. This means that it is played on a 4x4x4x4 board, creating 256 cells in total. Trying to imagine this can be tough, so it's recommended that you <b>don't try to wrap your head around the geometry</b>, but rather just get used to the rules of the game.
+        <br><br>
+        For simplicity, let's start with a 3D board, you can probably imagine how a 3D game would work, 4 of the same pieces placed above eachother would make you win. Here's an example:
+    </p>
+    
+    <img src="media/tutorial_3d_3dview_1.png" id="stack" alt="3D example">
+    <p id="caption">A straight line that goes directly up through a 3D board</p>
+
+    <p>
+        You can see 4 crosses that are positioned directly below eachother, one per level, meaning victory for player X. We can also represent this as four 4x4 fields next to eachother like below. Think of them like floors of a building, each field represents a floor of our 4x4 board. If every floor contains your piece piece in the same spot, you win!
+    </p>
+
+    <img src="media/tutorial_3d_1.png" alt="Floors example">
+    <p id="caption">The same board represented as floors</p>
+
+    <p>
+        Hopefully that made sense. Now if you've played Tic Tac Toe before, you know that you can also make diagonal lines to win, here's an example:
+    </p>
+
+    <img src="media/tutorial_3d_3dview_2.png" id="stack" alt="Diagonal 3D example">
+    <p id="caption">A straight line that goes diagonally up through a 3D board</p>
+
+    <img src="media/tutorial_3d_2.png" alt="Diagonal floors example">
+    <p id="caption">The same board represented as floors</p>
+
+    <p>
+        Here's another example, where player O blocked player X from winning:
+    </p>
+    <img src="media/tutorial_3d_3.png" alt="Example blocking">
+    <p id="caption">A line blocked by player O</p>
+
+    <p>
+        Now that we have essentially expanded into another dimension and flattened it out, we can repeat this process to expand into the 4th dimension. Imagine the bottom row of the following board is what we already established, and all rows above it are floors on top of that board:
+    </p>
+    
+    <img src="media/tutorial_4d_1.png" alt="Example winning in 4D">
+    <p id="caption">A line going diagonal in all directions</p>
+
+    <p>
+        Here's what that would look like if you were to stack those floors on top of eachother, we have finally reached our 4D board.
+    </p>
+    <img src="media/tutorial_4d_3dview.png" alt="Example winning in 4D">
+    <p id="caption">A 4D board represented as 4 3D boards</p>
+
+    <p>
+        Here's some of the straight lines you could make on this board to win:
+    </p>
+    <img src="media/tutorial_4d_2.png" alt="Example winning in 4D">
+    <p id="caption">Examples of valid lines</p>
+
+    <p>
+        To make the game a bit easier to follow, the lines that the cell you're hovering could be part of are highlighted in blue like below. You can turn this off by clicking on <b>Disable Highlights</b> below the board for an extra challenge. Alternatively you can add '?hard' to the end of the url.
+    </p>
+    <img src="media/tutorial_4d_3.png" alt="Example highlights">
+    <p id="caption">Highlights of lines that the hovered cell could form lines with</p>
+    <p>
+        That's it! It's a confusing game for sure, especially at the start. But as you get used to the rules, it becomes way more intutitive. To finish off, here's an example of a real game where player X won:
+    </p>
+    <img src="media/tutorial_4d_4.png" alt="Example game">
+    <p id="caption">An example of a real game - player X won here</p>
+
+    <p id="final_line">
+        Have fun playing!
+    </p>
+    <a href="../index.html" target="">Back to game</a>
+</body>
+
+<!-- Mirrored from tictactesseract.online/how-to-play/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jan 2024 19:36:00 GMT -->
+</html>

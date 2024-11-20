@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="../code.jquery.com/jquery-3.6.4.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=.7, user-scalable=no"
+    />
+    <title>Tic Tac Tesseract</title>
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png"> -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="media/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="media/favicon/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="media/favicon/site.webmanifest"> -->
+    <!-- Commented out because it overrides the ios icon. -->
+
+    <meta name="theme-color" content="#a896ff" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <add-to-home-screen></add-to-home-screen>
+    <div class="main-centerer">
+      <h1>Tic Tac Tesseract</h1>
+      <p id="subtext">4 Dimensional Tic Tac Toe</p>
+      <a href="how-to-play/index.html" target="blank">How to play</a>
+      <p id="display"><b>Player X</b> is first to play</p>
+      <table id="playField"></table>
+      <a onClick="//toggleHardMode();" id="hardModeToggle"
+        >Disable Highlights</a
+      >
+      <p id="subtext">
+        By
+        <a href="https://linktr.ee/phantomeye" target="_blank">PhantomEye</a>
+        &
+        <a href="https://linktr.ee/serialsniper" target="_blank"
+          >SerialSniper</a
+        >
+      </p>
+      <p class="Credits">Modified by nasmeh</p>
+      <p id="tiny">Version Multiplayer (1.4.2)</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
